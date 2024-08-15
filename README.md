@@ -12,3 +12,5 @@
   - React
 - Database:
   - Postgress
+- Common:
+  - zod validation and inference
