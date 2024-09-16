@@ -47,6 +47,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
         {type === "signup" && (
           <Input
             id="name"
+            // @ts-ignore
             value={postInputs?.name}
             inputType="text"
             label="Name"

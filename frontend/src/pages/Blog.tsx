@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 export const Blog = () => {
   const { id } = useParams();
   const { blog, loading } = useBlog({ id: id || "" });
-  if (loading) {
+  if (loading || !blog) {
     return (
       <>
         <AppBar />

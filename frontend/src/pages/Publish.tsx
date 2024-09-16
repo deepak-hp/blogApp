@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { AppBar } from "../components/AppBar";
 import { BACKEND_URL } from "../config";
 import axios from "axios";
@@ -54,7 +54,7 @@ export const Publish = () => {
 
 function TextEditor(props: {
   description: string;
-  setDescription: () => void;
+  setDescription: Dispatch<SetStateAction<string>>;
 }) {
   return (
     <textarea
